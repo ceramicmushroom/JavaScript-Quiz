@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- header contains the button to view the highscores, ID is to grab it in javascript -->
+        <button id="highscore">View Highscore</button>
+        <h4 id="timer"></h4>
+    </header>
+        <main>
+            <div class="startContainer">
+                <h1>Coding Quiz</h1>
+                <p class="subtitle">Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds.</p>
+                <button id="start">Start Quiz</button>
+            </div>
+            <div id="quizContainer" class="hidden">
+                <div id="question">Question placeholder</div>
+                <div id="answer">
+                    <button class="option" id="opt1">option 1</button>
+                    <button class="option" id="opt2">option 2</button>
+                    <button class="option" id="opt3">option 3</button>
+                    <button class="option" id="opt4">option 4</button>
+                </div>
+            </div>
+
+            <div id="highscoreContainer" class="hidden">
+                <p id="score"></p><input id="nameInput" type="text">
+                <button id="returnButton">Return</button>
+                <button id="viewHighscore">View High Score</button>
+            </div>
+
+            <div id="scoreGraveyard" class="hidden">
+                <h1 id="highscoreTitle">High Scores</h>
+                    <div id="scoreDisplay"></div>
+            </div>
+            
+        </main>
+
+
+
+    
+
+
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-wrap: wrap; /* adjusts to screen size */
+    justify-content: space-between; /*separates them*/
+    align-items: center;
+    margin-inline: 5px; /*inline part means left and right side */
+}
+
+main,
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+#question {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#answer {
+    margin: 10px;
+}
+
+button.option {
+    margin: 10px;
+    width: 200px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
